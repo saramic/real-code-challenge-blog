@@ -11,3 +11,9 @@ assumes using `asdf` and internet connectivity
 make
 ```
 
+### Cucumber with JSON
+
+```
+bundle exec cucumber --format json_pretty --out mock_submissions/all_passing.json
+```
+

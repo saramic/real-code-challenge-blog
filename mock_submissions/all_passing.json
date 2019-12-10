@@ -1,0 +1,504 @@
+[
+  {
+    "uri": "features/feature_01_can_create_posts.feature",
+    "id": "can-create-blog-posts",
+    "keyword": "Feature",
+    "name": "Can create blog posts",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "can-create-blog-posts;jane-goes-to-the-site-and-creates-a-blog-post",
+        "keyword": "Scenario",
+        "name": "Jane goes to the site and creates a blog post",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@javascript",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "the blog server is running",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/demo.rb:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "\"Jane\" visits the main page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/demo.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1497179000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "follows \"New Article\"",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/demo.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71710000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "she sees a \"New Article\" form",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/demo.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83269000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "she fills in the fields",
+            "line": 12,
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "My first blog post"
+                ]
+              },
+              {
+                "cells": [
+                  "Text",
+                  "It was a dark and stormy night at Rails Camp"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/demo.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 292690000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "she clicks \"Create Article\"",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/demo.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222088000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "\"she\" sees success message \"Article was successfully created.\"",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/demo.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30492000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "\"she\" sees the article with the content",
+            "line": 18,
+            "rows": [
+              {
+                "cells": [
+                  "Title:",
+                  "Title: My first blog post"
+                ]
+              },
+              {
+                "cells": [
+                  "Text:",
+                  "Text: It was a dark and stormy night at Rails Camp"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/demo.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85523000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "she refreshes the page",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/demo.rb:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84595000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "\"she\" sees the article with the content",
+            "line": 24,
+            "rows": [
+              {
+                "cells": [
+                  "Title:",
+                  "Title: My first blog post"
+                ]
+              },
+              {
+                "cells": [
+                  "Text:",
+                  "Text: It was a dark and stormy night at Rails Camp"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/demo.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83012000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "\"she\" visits the main page",
+            "line": 28,
+            "match": {
+              "location": "features/step_definitions/demo.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90721000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "\"she\" sees the following articles",
+            "line": 30,
+            "rows": [
+              {
+                "cells": [
+                  "My first blog post",
+                  "It was a dark and stormy night at Rails Camp"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/demo.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153621000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117032000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/feature_02_can_comment_on_posts.feature",
+    "id": "can-comment-on-blog-posts",
+    "keyword": "Feature",
+    "name": "Can comment on blog posts",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "can-comment-on-blog-posts;john-and-james-comment-on-jane's-blog-post",
+        "keyword": "Scenario",
+        "name": "John and James comment on Jane's blog post",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@javascript",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "the blog server is running",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/demo.rb:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "\"Jane\" creates an \"Article\"",
+            "line": 7,
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "My first blog post"
+                ]
+              },
+              {
+                "cells": [
+                  "Text",
+                  "It was a dark and stormy night at Rails Camp"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/demo.rb:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 502517000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "\"she\" sees success message \"Article was successfully created.\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/demo.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24644000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "\"John\" comments \"Well done\"",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/demo.rb:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 285537000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "\"he\" sees success message \"Comment was successfully created.\"",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/demo.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24568000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "\"he\" sees comment 1 with content",
+            "line": 16,
+            "rows": [
+              {
+                "cells": [
+                  "Comment:",
+                  "Comment: Well done"
+                ]
+              },
+              {
+                "cells": [
+                  "Commenter:",
+                  "Commenter: John"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/demo.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113426000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "\"James\" comments \"here here\"",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/demo.rb:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 258665000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "\"he\" sees success message \"Comment was successfully created.\"",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/demo.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22435000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "\"he\" sees comment 1 with content",
+            "line": 23,
+            "rows": [
+              {
+                "cells": [
+                  "Comment:",
+                  "Comment: Well done"
+                ]
+              },
+              {
+                "cells": [
+                  "Commenter:",
+                  "Commenter: John"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/demo.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203404000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "\"he\" sees comment 2 with content",
+            "line": 26,
+            "rows": [
+              {
+                "cells": [
+                  "Comment:",
+                  "Comment: here here"
+                ]
+              },
+              {
+                "cells": [
+                  "Commenter:",
+                  "Commenter: James"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/demo.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114019000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86091000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
