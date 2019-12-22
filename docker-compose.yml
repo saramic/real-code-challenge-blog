@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+
+  features:
+    build: .
+    environment:
+      SELENIUM_REMOTE_URL: http://webdriver_chrome:5900/wd/hub
+    depends_on:
+      - webdriver_chrome
+    volumes:
+      - .:/usr/src/app
+      - gem_cache:/gems
+    networks:
+      - back
+
+  webdriver_chrome:
+    image: selenium/standalone-chrome-debug
+    logging:
+      driver: none
+    ports:
+      - "5900:5900"
+    networks:
+      - real-code-submission-blog_web
+      - back
+
+networks:
+  back:
+  real-code-submission-blog_web:
+    external: true
+
+volumes:
+  gem_cache:
+
